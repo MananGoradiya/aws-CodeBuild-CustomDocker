@@ -7,7 +7,6 @@ phases:
       - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
   pre_build:
     commands:
-      - docker login -u MananGoradiya -p Ma1!nan@16
       - echo "login done"
       - docker build -t helloworld .
   build:
