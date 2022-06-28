@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
       - docker login -u MananGoradiya -p Ma1!nan@16
+      - echo "login done"
       - docker build -t helloworld .
   build:
     commands:
