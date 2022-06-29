@@ -8,6 +8,7 @@ phases:
     
   pre_build:
     commands:
+      - systemctl start docker
       - docker build -t manan .
   
   build:
