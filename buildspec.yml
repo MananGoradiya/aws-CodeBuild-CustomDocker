@@ -13,5 +13,5 @@ phases:
   build:
     commands:
       - docker images
-      - docker run -it -d -name manan_container manan
+      - docker run -it -d --name manan_container manan
       - docker ps
